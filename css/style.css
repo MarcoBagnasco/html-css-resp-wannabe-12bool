@@ -75,8 +75,8 @@ img {
 
 /* RESPONSIVE */
 /* TABLET */
-/* MD - 992px > Screen >= 768px */
-@media screen and (max-width: 991px) and (min-width: 768px){
+/* MD - 992px > Screen */
+@media screen and (max-width: 991px) {
   /* General */
   body{
     font-size: 1.2rem;
@@ -115,5 +115,35 @@ img {
   #why .row>.third {
     margin-top: 30px;
     padding: 0 20px 10px;
+  }
+}
+
+/* MOBILE */
+/* XS - 768 > Screen */
+@media screen and (max-width: 767px){
+  /* General */
+  .row{
+    margin-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  img:not(#why .row img){
+    height: 150px;
+   }
+   #why .row img{
+     height: 170px;
+   }
+   /* Lezioni */
+  #lezioni .row>.right{
+    margin-top: 15px;
+    border-left: 0;
+  }
+  /* Steps */
+  #steps .row>.central{
+    padding-top: 30px;
+  }
+  /* Why */
+  #why.container{
+    background-color: #8FBC8F;
   }
 }
